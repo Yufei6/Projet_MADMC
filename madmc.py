@@ -23,14 +23,14 @@ def algoSecond(data):
     res=[]
     a=0
     data = np.array(data)
-    data = data[np.argsort(data[:,0])]
+    data = data[np.argsort(data[:,0])[::-1]]
     n=len(data)
     for i in range(n):
         data=data[a:len(data),]
         m=len(data)
-        max1=np.argmax(data[:,1])
-        res.append(data[max1])
-        a=max1+1
-        if max1==m-1:
+        min1=np.argmin(data[:,1])
+        res.append(data[min1])
+        a=min1+1
+        if min1==m-1:
             break
     return res
