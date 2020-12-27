@@ -34,3 +34,13 @@ def algoSecond(data):
         if min1==m-1:
             break
     return res
+def dynamique(n,k,data)
+	tab=[]
+	tab1=[]
+	tab2=[]
+	for i in range(k+1):
+		tab1=[]
+		for j in range(n):
+			tab1.append([])
+		tab.append(tab1)
+	
