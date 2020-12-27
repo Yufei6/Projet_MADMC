@@ -1,7 +1,7 @@
 import numpy as np
 def alea(n,m):
 	#genere des exemple aleatoirement
-	return m/4*numpy.random.randn(n, 2)+m
+	return m/4*np.random.randn(n, 2)+m
 
 def algoNaif(data):
 	res=[]
